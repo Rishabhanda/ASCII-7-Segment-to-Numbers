@@ -1,0 +1,18 @@
+<form  (ngSubmit)='onSubmit(valueEneterredForm)' #valueEneterredForm='ngForm' class='display-xs'>
+  <div class="form-row align-items-center">
+    <div class='col-sm-8'>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Count Upto</div>
+        </div>
+          <input style='position: relative;'  #valueGetter='ngModel' ngModel name='value' required type="text" class="form-control" id="counter" placeholder="Enter last number upto which to count">
+          <p style='position: absolute; top: 40px;' class='text-danger' *ngIf=' valueGetter.touched && valueGetter.invalid'>**Please enter numbers only</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <button [disabled]='!valueEneterredForm.valid' type="submit" class="btn btn-secondary">Submit</button>
+    </div>
+  </div>
+</form>
+<br>
+<p>{{result}}</p>  

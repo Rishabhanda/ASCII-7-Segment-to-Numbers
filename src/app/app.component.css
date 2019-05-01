@@ -1,0 +1,47 @@
+.border-sidenav{
+  border-right: 1px solid #eee;
+  background-color: #a3e425;
+}
+.display-row-height{
+  height: 100vh;
+}
+.display-btn{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  z-index:1000;
+}
+.display-btn-xs{
+  display: none;
+}
+
+.display-none-xs{
+  display: flex;
+  align-items: center;
+  /* centering the items vertically */
+}
+
+.display-menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.display-menu button{
+  margin: 10px 0;
+  color: #fff;
+  border-color: #fff;
+}
+
+.margin-30{
+  margin: 30px;
+}
+
+@media screen and (max-width: 576px){
+  .display-none-xs{
+    display: none;
+  }
+  .display-btn-xs{
+    display: block;
+  }
+}

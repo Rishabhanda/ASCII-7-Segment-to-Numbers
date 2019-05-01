@@ -1,0 +1,9 @@
+<input type="file" name='uploadFile' (change)='fileSelected($event)'>
+
+<div style='height:300px; overflow-y: scroll; margin-top:10px;'>
+  <pre>{{dataReceived}}</pre>
+</div>
+<div style='height:200px; overflow-y: scroll; margin-top:50px;'>
+  <p *ngFor='let arr of outputArr'>{{arr}}</p>
+</div>
+
